@@ -1,0 +1,35 @@
+# ========== Unity folders to ignore ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# ========== IDE / Editor files ==========
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ========== Auto-generated files ==========
+*.bak
+*.tmp
+*.copy
+*.old
+
+# ========== System files ==========
+.DS_Store
+Thumbs.db

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Face
+  - Orange
+  - Apple
+  - OrangeJuice
+  - PickledApples
+  - Berries
+  - Milk
+  - Banana
+  - Pan
+  - MilkShacke
+  - Chocolate
+  - Meat
+  - Powder
+  - Cheese
+  - Egg
+  - Cabinet
+  - Bread
+  - CheeseCake
+  - Wine
+  - CupCake
+  - AppleStrudel
+  - ApplePie
+  - Bacon
+  - Cake
+  - CreamPuff
+  - FailDish
+  - FriedEgg
+  - MeatPie
+  - Panini
+  - Pizza
+  - Pudding
+  - Sandwich
+  - Smoothie
+  - Steak
+  - Trash
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - TriggerOnly
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 1011670105
+    locked: 0
+  - name: 2
+    uniqueID: 3815318177
+    locked: 0
