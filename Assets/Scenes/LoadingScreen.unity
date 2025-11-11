@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -184,7 +181,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.002532
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -227,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 244615de7aadfcf438a4da47e69386fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceAspectWidth: 20
+  referenceAspectWidth: 16
   referenceAspectHeight: 9
 --- !u!1 &457892210
 GameObject:
@@ -263,6 +260,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -284,6 +286,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -307,8 +310,8 @@ Transform:
   m_GameObject: {fileID: 457892210}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0256, y: -0.0073, z: 0}
-  m_LocalScale: {x: 1.0392163, y: 0.93460083, z: 1}
+  m_LocalPosition: {x: -0.0691, y: -0.0727, z: 0}
+  m_LocalScale: {x: 1.1389793, y: 0.94669175, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -389,7 +392,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -468,6 +471,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -489,6 +497,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
@@ -540,19 +549,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440090805672784957, guid: 1e0520fabaa41144ab3b3b04bfda2e90, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.074087
+      value: 2.3165689
       objectReference: {fileID: 0}
     - target: {fileID: 440090805672784957, guid: 1e0520fabaa41144ab3b3b04bfda2e90, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5295883
+      value: 1.597579
       objectReference: {fileID: 0}
     - target: {fileID: 440090805672784957, guid: 1e0520fabaa41144ab3b3b04bfda2e90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2808
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 440090805672784957, guid: 1e0520fabaa41144ab3b3b04bfda2e90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9842
+      value: 4.15
       objectReference: {fileID: 0}
     - target: {fileID: 440090805672784957, guid: 1e0520fabaa41144ab3b3b04bfda2e90, type: 3}
       propertyPath: m_LocalPosition.z
@@ -864,6 +873,11 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -885,6 +899,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
@@ -916,7 +931,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1815486043
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -930,6 +945,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -953,10 +969,10 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 66684295}
   - {fileID: 1200743572}
   - {fileID: 1066518127}
   - {fileID: 675738298}
-  - {fileID: 66684295}
   - {fileID: 1618166853}
   - {fileID: 597794241}
   - {fileID: 457892212}

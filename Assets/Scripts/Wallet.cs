@@ -119,7 +119,7 @@ public class Wallet : MonoBehaviour
             var root = rt.root as RectTransform;
             float canvasW = root ? root.rect.width : Screen.width;
             float canvasH = root ? root.rect.height : Screen.height;
-            float size = Mathf.Min(canvasW, canvasH) * sizePercentOfCanvas;
+            float size = Mathf.Min(canvasW, canvasH) * 1.2f*sizePercentOfCanvas;
             rt.sizeDelta = new Vector2(size, size);
         }
 

@@ -15,7 +15,7 @@ public class Fridge : MonoBehaviour
     {
         if (!OpenFridge)
         {
-            Vector3 spawnPosition = new Vector3(0, 3.7f, 0);
+            Vector3 spawnPosition = new Vector3(0, 3.6f, 0);
 
             spawnedFridgeObject = Instantiate(fridge, spawnPosition, Quaternion.identity);
             spawnedFridgeScript = spawnedFridgeObject.GetComponent<Capsule>();
