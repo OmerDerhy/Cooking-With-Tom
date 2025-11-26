@@ -433,7 +433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 681, y: 408.33}
+  m_AnchoredPosition: {x: 600, y: 408.33}
   m_SizeDelta: {x: 173.73, y: 170.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &251877692
@@ -644,11 +644,11 @@ Transform:
   m_GameObject: {fileID: 305607851}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2632446, y: 1.7506714, z: -9720}
+  m_LocalPosition: {x: -771.66907, y: 413.5421, z: -9720}
   m_LocalScale: {x: 34.90221, y: 34.221306, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 895276870}
+  m_Father: {fileID: 1446471490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &305607853
 SpriteRenderer:
@@ -1999,6 +1999,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7602995392903945662, guid: c15ea75d4efc12042ad33b4ca230d897, type: 3}
   m_PrefabInstance: {fileID: 1091982273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &895276874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895276864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491675a48a013bd41a9718cdc4ea5bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Logo
+  target: {fileID: 0}
+  periodSeconds: 3
+  minScale: 0.9
+  maxScale: 1.15
+  useUnscaledTime: 1
+  randomizeStartPhase: 1
+  resetOnDisable: 1
 --- !u!1 &960363117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,11 +2834,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7602995392903945662, guid: c15ea75d4efc12042ad33b4ca230d897, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 305607852}
+    m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7602995392903945663, guid: c15ea75d4efc12042ad33b4ca230d897, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 895276874}
     - targetCorrespondingSourceObject: {fileID: 7602995392903945663, guid: c15ea75d4efc12042ad33b4ca230d897, type: 3}
       insertIndex: -1
       addedObject: {fileID: 895276865}
@@ -2948,7 +2967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RECIPES
+  m_Text: 
 --- !u!222 &1151289907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3500,7 +3519,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!224 &1446471490
 RectTransform:
@@ -3515,6 +3534,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 195875540}
+  - {fileID: 305607852}
   - {fileID: 895276870}
   - {fileID: 1898244957}
   - {fileID: 482828650}

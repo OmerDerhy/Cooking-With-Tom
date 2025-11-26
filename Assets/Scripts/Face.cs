@@ -74,6 +74,7 @@ public class Face : MonoBehaviour
 
     void OnMouseDown()
     {
+        target.gameObject.SetActive(true);
         if (target != null)
         {
             target.AnimationAgain();

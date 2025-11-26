@@ -5,6 +5,16 @@ public class Capsule : MonoBehaviour
 {
     private List<GameObject> objectsInTrigger = new List<GameObject>();
 
+    private Fridge fridge;
+
+    void Awake()
+    {
+        if(fridge == null)
+        {
+            fridge = FindObjectOfType<Fridge>();
+        }        
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Food>() != null && !objectsInTrigger.Contains(other.gameObject))
@@ -19,6 +29,9 @@ public class Capsule : MonoBehaviour
         if (objectsInTrigger.Contains(other.gameObject))
         {
             objectsInTrigger.Remove(other.gameObject);
+            DestroyFoods();
+            fridge.killspawnedFridgeObject();
+            // fridge.Open();
         }
     }
 

@@ -40,4 +40,13 @@ public class Fridge : MonoBehaviour
             OpenFridge = false;
         }
     }
+    public void SetOpen(bool Open)
+    {
+        OpenFridge = Open;
+    }
+    public void killspawnedFridgeObject()
+    {
+        Destroy(spawnedFridgeObject);
+        OpenFridge = false;
+    }
 }

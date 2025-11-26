@@ -5,6 +5,8 @@ public class Food : MonoBehaviour
 {
     private Face face;
 
+    private Fridge capsule;
+
     private bool isDragging = false;
     private int draggingFingerId = -1;
     private Camera mainCamera;
@@ -33,6 +35,10 @@ public class Food : MonoBehaviour
         if (face == null)
             face = FindObjectOfType<Face>();
 
+        if(capsule == null)
+        {
+            capsule = FindObjectOfType<Fridge>();
+        }        
         rb2d = GetComponent<Rigidbody2D>();
         col2d = GetComponent<Collider2D>();
     }

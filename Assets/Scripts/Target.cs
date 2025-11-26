@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class Target : MonoBehaviour
 {
+    public bool onStart = true;
     public GameObject WinButton;
     public Food[] objectsArray;
     public Face face;
     public int currentLevel;
-    public Image Cookies;
+    public CookieRain Cookies;
     public Button NextLevelButton;
 
     public AudioClip clickSound;
@@ -25,6 +26,31 @@ public class Target : MonoBehaviour
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
+        if(Cookies == null)
+        {
+            Cookies = FindObjectOfType<CookieRain>();
+        }
+        // if (Cookies== null)
+        // {
+        //     GameObject obj = GameObject.Find("cookie");
+        //     if (obj != null)
+        // {
+        //     Cookies = obj.GetComponent<CookieRain>();
+
+        //     if (Cookies != null)
+        //     {
+        //         Debug.Log("Cookies found automatically: " + obj.name);
+        //     }
+        //     else
+        //     {
+        //         Debug.LogError("GameObject found but NO CookieRain component on it!", obj);
+        //     }
+        // }
+        // else
+        // {
+        //     Debug.LogError("No GameObject named 'CookieImage' found in the scene!");
+        // }
+        // }
     }
 
     protected virtual void Start()
@@ -38,7 +64,7 @@ public class Target : MonoBehaviour
         if (!clickSound)
             clickSound = Resources.Load<AudioClip>("CashSound");
 
-        StartCoroutine(ShowFoodImages()); // הצגה ראשונית
+        if(onStart)StartCoroutine(ShowFoodImages()); // הצגה ראשונית
     }
 
     public void AnimationAgain()

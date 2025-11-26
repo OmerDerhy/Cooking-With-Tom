@@ -1382,7 +1382,7 @@ MonoBehaviour:
   - {fileID: 3917495099497755635, guid: 4118eec0ac3d3c848b3813af7781b020, type: 3}
   face: {fileID: 0}
   currentLevel: 13
-  Cookies: {fileID: 2078934422}
+  Cookies: {fileID: 2078934421}
   NextLevelButton: {fileID: 122680688}
   clickSound: {fileID: 0}
 --- !u!212 &810207617
