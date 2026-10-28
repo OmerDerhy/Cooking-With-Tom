@@ -1,6 +1,9 @@
+ <img width="2752" height="2064" alt="ipad foxy screen shot" src="https://github.com/user-attachments/assets/3a9aa725-d39e-4714-aa31-9d034562296e" />
 # Cooking With Tom - Kids Game 🐼👨‍🍳
 
 Welcome to **Cooking With Tom**, a fun, interactive 2D cooking game built in Unity! In this game, players step into a lively kitchen to prepare delicious meals and treats for their hungry friend, Tom the Panda. 
+
+https://play.google.com/store/apps/details?id=com.legendery.cookingwithtom&pli=1
 
 ## 🌟 Features
 
